@@ -1,0 +1,43 @@
+body {
+  background: #2C3E50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.gallery {
+  columns: 4 320px;
+  background-color: white;
+  column-gap: .5em;
+  padding: 5px;
+}
+.container-img {
+  position: relative;
+  cursor: pointer;
+}
+.container-img img {
+  transition: all 500ms ease-out;
+}
+
+.capa {
+  position: absolute;
+  top: 0px;
+  color: white;
+  width: 100%;
+  height: 100%;
+  background: rgb(25 24 26 / 60%);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.showCapa {
+  opacity: 1;
+  visibility: visible;
+  cursor: default;
+}
+
